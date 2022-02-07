@@ -51,3 +51,4 @@ typing-extensions==4.0.1
 typing-inspect==0.7.1
 urllib3==1.26.8
 vosk==0.3.32
+python-dotenv==0.19.2

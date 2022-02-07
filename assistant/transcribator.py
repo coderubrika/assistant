@@ -18,7 +18,7 @@ responses = queue.Queue()
 audio_blocks = queue.Queue()
 phrases = queue.Queue()
 
-model = vosk.Model('../model_ru_small/')
+model = vosk.Model('../ignore/model_ru_small/')
 rec = vosk.KaldiRecognizer(model, 44000)
 
 

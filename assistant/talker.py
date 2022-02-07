@@ -6,6 +6,7 @@ import time
 
 class Talker:
     def __call__(self):
+        self.engine = pyttsx3.init()
         self.trhead_check_queue.start()
 
     def check_queue(self):
@@ -25,7 +26,7 @@ class Talker:
     def __init__(self):
         self.sentences = queue.Queue()
         self.trhead_check_queue = threading.Thread(target=self.check_queue)
-        self.engine = pyttsx3.init()
+
 
 
 def start_talker(queue):
